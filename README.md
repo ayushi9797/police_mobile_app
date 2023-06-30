@@ -93,6 +93,14 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 | getbyid   | /bag/get/:id        | This route should allow user to get bag                 | 201         |
 | patch     | /bag/upadte/:id     | This route should allow user to update bag              | 201         |
 | delete    | /bag/delete:id      | This route should allow user to delete bag              | 201         |
+| Post      | /mobile/add         | This route should allow user to add mobile details      | 201         |
+| Get       | /mobile/get         | This route should allow user to get mobile details      | 201         |
+| Patch     | /mobile/update      | This route should allow user to update moile details    | 201         |
+| Delete    | /mobile/delete      | This route should allow user to delete mobile details   | 201         |
+| Post      | /other/add          | This route should allow user to add other details       | 201         |
+| Get       | /other/get          | This route should allow user to get other details       | 201         |
+| Patch     | /mobile/update/:id  | This route should allow user to get other details       | 201         |
+| Delete    | /mobile/delete/:id  | This route should allow user to delete other details    | 201         |
 
 # User's Schema
 
