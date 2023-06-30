@@ -14,6 +14,7 @@ const { GntRouter } = require("./routes/generateNewToken.route");
 const { LogoutRouter } = require("./routes/logout.route");
 const { VehicleRouter } = require("./routes/vehicle.route");
 const { HumanRouter } = require("./routes/human.route");
+const { PetRouter } = require("./routes/pet.route");
 
 
 // --------------->>>>>>>> Middlewares <<<<<<<<-------------------
@@ -36,8 +37,9 @@ app.use("/user", UserRouter);
 app.use(authenticate);
 app.use("/newtoken", GntRouter);
 app.use("/logout", LogoutRouter);
-app.use("/vehicle",VehicleRouter);
-app.use("/person",HumanRouter);
+app.use("/vehicle", VehicleRouter);
+app.use("/person", HumanRouter);
+app.use("/pet", PetRouter);
 
 
 // --------------->>>>>>>> Server Running <<<<<<<<-------------------
