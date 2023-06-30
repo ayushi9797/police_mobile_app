@@ -7,3 +7,5 @@ const GntRouter = express.Router();
 GntRouter.get("/", GenerateToken );
 
 module.exports = { GntRouter };
+
+

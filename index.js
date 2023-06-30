@@ -48,7 +48,7 @@ app.use("/mobile", MobileRouter);
 app.use("/other", OtherRouter)
 
 
-// --------------->>>>>>>> Server Running <<<<<<<<-------------------
+// --------------->>>>>>>> Server Running <<<<<<<<--------------------
 
 app.listen(process.env.PORT, async () => {
   try {
