@@ -2,7 +2,6 @@
 
 The Police Club mobile app is a comprehensive platform that delivers real-time information and news related to law enforcement agencies and police-related events. This app caters to a diverse audience, including journalists, law enforcement professionals, and the general public interested in staying informed about police-related matters.
 
-
 ## System-Design -> HLD
 
 ![image](https://github.com/ayushi9797/police_mobile_app/assets/112810259/76fea6f6-6f08-42e1-8d40-a236ecbf8c9a)
@@ -11,13 +10,12 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 - visit this folder -> cd police_lld
 - police.ts
- ### Deployed Link
+
+### Deployed Link
 
 `https://police-app-2-0.onrender.com/`
 
 ![image](https://github.com/ayushi9797/police_mobile_app/assets/112810259/39c57d5c-b095-4059-ab2b-e207ca99f855)
-
-
 
 ## To run this application in typescript
 
@@ -103,18 +101,18 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 | Delete    | /mobile/delete      | This route should allow user to delete mobile details   | 201         |
 | Post      | /other/add          | This route should allow user to add other details       | 201         |
 | Get       | /other/get          | This route should allow user to get other details       | 201         |
-| Patch     | /other/update/:id  | This route should allow user to get other details       | 201         |
-| Delete    | /other/delete/:id  | This route should allow user to delete other details    | 201         |
+| Patch     | /other/update/:id   | This route should allow user to get other details       | 201         |
+| Delete    | /other/delete/:id   | This route should allow user to delete other details    | 201         |
 
 # User's Schema
 
 ```
 {
-    "name":"chiku",
-    "email":"chiku123@gmail.com",
-    "password":"1234"
+    "name": "chikuuu",
+    "email": "chiku111@gmail.com",
+    "phoneNumber": "9450118914",
+    "password": "1234"
 }
-
 ```
 
 ## Register route
@@ -125,11 +123,11 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ```
 {
-    "name":"ayushi soni",
-    "email":"soniayushi517@gmail.com",
-    "password":"1234"
+    "name": "chikuuu",
+    "email": "chiku111@gmail.com",
+    "phoneNumber": "9450118914",
+    "password": "1234"
 }
-
 ```
 
 ## Response status

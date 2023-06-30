@@ -10,8 +10,8 @@ const VehicleSchema = new mongoose.Schema({
     vehicle_image: String,
     police_station: String
 
-})
+});
 
-const VehicleModel = mongoose.model('vehicles', VehicleSchema)
+const VehicleModel = mongoose.model('vehicles', VehicleSchema);
 
-module.exports = { VehicleModel }
+module.exports = { VehicleModel };

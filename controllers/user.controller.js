@@ -9,7 +9,7 @@ const { UserModel } = require("../model/user.model");
 
 const signup = async (req, res) => {
     try {
-        const { name, email, phoneNumber, password } = req.body;
+        const { name, email, phoneNumber, picture, password } = req.body;
         const isPresent = await UserModel.find({ email });
 
         if (isPresent.length === 0) {
@@ -21,6 +21,7 @@ const signup = async (req, res) => {
                         name,
                         email,
                         phoneNumber,
+                        picture,
                         password: hash,
                     });
                     await newUser.save();
