@@ -135,23 +135,25 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 # All routes
 
-| METHOD | ENDPOINT       | DESCRIPTION                                             | STATUS CODE |
-| ------ | -------------- | ------------------------------------------------------- | ----------- |
-| Post   | /user/register | User can able to register                               | 200         |
-|        |                |
-| Post   | /user/login    | This route should allow user to login                   | 200         |
-| Get    | /logout        | This endpoint should allow user to logout their account | 200         |
-| Post   | /vehicle/add   | This route should allow user to add vehicle             | 201         |
-| Get    | /vehicle/get   | This route should allow user to get vehicle             | 200         |
-| Get by id | /vehicle/get/:id | This route should allow user to get unique vehicle  | 200         |
-| Patch    | /vehicle/update/:id  | This route should allow user to update vehicle     | 200         |
-| Delete    | /vehicle/delete/:id   | This route should allow user to delete vehicle             | 200         |
-|     |    |              |         |
-| post    | /person/add   | This route should allow user to add person             | 200         |
-| Get    | /person/get   | This route should allow user to get person             | 200         |
-| Get by id  | /person/get/:id   | This route should allow user to get unique person             | 200         |
-| Patch    | /person/update/:id   | This route should allow user to update vehicle             | 200         |
-| Delete    | /person/delete/"id   | This route should allow user to delete vehicle             | 200         |
+| METHOD    | ENDPOINT            | DESCRIPTION                                             | STATUS CODE |
+| --------- | ------------------- | ------------------------------------------------------- | ----------- |
+| Post      | /user/register      | User can able to register                               | 200         |
+|           |                     |
+| Post      | /user/login         | This route should allow user to login                   | 200         |
+| Get       | /logout             | This endpoint should allow user to logout their account | 200         |
+| Post      | /vehicle/add        | This route should allow user to add vehicle             | 201         |
+| Get       | /vehicle/get        | This route should allow user to get vehicle             | 200         |
+| Get by id | /vehicle/get/:id    | This route should allow user to get unique vehicle      | 200         |
+| Patch     | /vehicle/update/:id | This route should allow user to update vehicle          | 200         |
+| Delete    | /vehicle/delete/:id | This route should allow user to delete vehicle          | 200         |
+|           |                     |                                                         |             |
+| post      | /person/add         | This route should allow user to add person              | 200         |
+| Get       | /person/get         | This route should allow user to get person              | 200         |
+| Get by id | /person/get/:id     | This route should allow user to get unique person       | 200         |
+| Patch     | /person/update/:id  | This route should allow user to update vehicle          | 200         |
+| Delete    | /person/delete/"id  | This route should allow user to delete vehicle          | 200         |
+| post      | /pet/add            | This route should allow user to add pet                 | 200         |
+| get       | /pet/get            | This route should allow user to get pet                 | 200         |
 
 ## Vehicle Schema
 
@@ -349,4 +351,56 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
         }
     ]
 }
+```
+
+## Pet post schema
+
+```
+{
+    "pet_breed": "bread",
+    "pet_picture": "img.png",
+    "pet_color": "white",
+    "pet_date": "03-12-2000",
+    "pet_time": "03-12-2001",
+    "PoliceStation": "mumbai"
+}
+```
+
+## Pet post API
+
+`http://localhost:8080/pet/add`
+
+## PET get API
+
+`http://localhost:8080/pet/get`
+
+## Pet GET Response Status
+
+```
+{
+    "message": ":getting all your Pets details 🚎  ",
+    "data": [
+        {
+            "_id": "649e91788099d610e668271b",
+            "pet_breed": "String",
+            "pet_picture": "String",
+            "pet_color": "String",
+            "pet_date": "2000-03-11T18:30:00.000Z",
+            "pet_time": "2001-03-11T18:30:00.000Z",
+            "PoliceStation": "String",
+            "__v": 0
+        },
+        {
+            "_id": "649e91948099d610e668271f",
+            "pet_breed": "bread",
+            "pet_picture": "img.png",
+            "pet_color": "white",
+            "pet_date": "2000-03-11T18:30:00.000Z",
+            "pet_time": "2001-03-11T18:30:00.000Z",
+            "PoliceStation": "mumbai",
+            "__v": 0
+        }
+    ]
+}
+
 ```
