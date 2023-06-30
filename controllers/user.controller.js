@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 require("dotenv").config();
 
 const { UserModel } = require("../model/user.model");
-const { sendEmail } = require("../nodemailer/sendingEmails");
+// const { sendEmail } = require("../nodemailer/sendingEmails");
 
 
 const signup = async (req, res) => {
@@ -56,7 +56,7 @@ const login = async (req, res) => {
                 // send otp
                 const otp = Math.round((Math.random() * 9999))
                 console.log(otp)
-                sendEmail({ email: email, subject: "Login OTP", body: ` Police club : Hello ${email}. Your login OTP is ${otp}` })
+                // sendEmail({ email: email, subject: "Login OTP", body: ` Police club : Hello ${email}. Your login OTP is ${otp}` })
 
                 // generate tokens 
                 const Normal_Token = jwt.sign({ userId: UserData._id }, process.env.NORMALKEY, { expiresIn: "7d" })
@@ -79,43 +79,5 @@ const login = async (req, res) => {
 
 }
 
-/*
 
-const getalluser = async (req, res) => {
-    try {
-        if (req.body.access_key === process.env.ACCESSKEY ) {
-
-            const UserData = await UserModel.find();
-            res.status(200).json({ UserData });
-        }
-        else {
-            res.status(401).json({ message: "Access denied" });
-        }
-        
-    }
-    catch (error) {
-        res.status(400).json({ message: error.message });
-        
-    }
-}
-
-const getUser = async (req, res) => {
-        const _id = req.params.id;
-        try {
-            if (req.body.access_key === process.env.ACCESSKEY ) {
-                const UserData = await UserModel.findOne({_id});
-                res.status(200).json({ UserData });
-            }
-            else {
-                res.status(401).json({ message: "Access denied" });
-            }
-            
-        }
-        catch (error) {
-            res.status(400).json({ message: error.message });
-            
-        }
-}
-
-*/
 module.exports = { signup, login }

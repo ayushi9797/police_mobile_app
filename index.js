@@ -9,7 +9,7 @@ require("dotenv").config();
 const { dbconnection } = require("./config/db");
 const { UserRouter } = require("./routes/user.route");
 const { authenticate } = require("./middlewares/authenticate.middleware");
-const { LogsData } = require("./middlewares/log.middleware");
+// const { LogsData } = require("./middlewares/log.middleware");
 const { GntRouter } = require("./routes/generateNewToken.route");
 const { LogoutRouter } = require("./routes/logout.route");
 const { VehicleRouter } = require("./routes/vehicle.route");
@@ -34,7 +34,7 @@ app.get("/", (req, res) => res.send(`<h1 style="text-align:Center;color:purple">
 
 
 // --------------->>>>>>>> Routers <<<<<<<<-------------------
-app.use(LogsData);
+// app.use(LogsData);
 app.use("/user", UserRouter);
 
 app.use(authenticate);
