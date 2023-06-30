@@ -4,7 +4,7 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ### Deployed Link
 
-`https://police-app.onrender.com/`
+`https://police-app-2-0.onrender.com/`
 
 ## System-Design -> HLD
 
