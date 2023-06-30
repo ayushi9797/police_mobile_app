@@ -15,7 +15,9 @@ const { LogoutRouter } = require("./routes/logout.route");
 const { VehicleRouter } = require("./routes/vehicle.route");
 const { HumanRouter } = require("./routes/human.route");
 const { PetRouter } = require("./routes/pet.route");
-const { BagRouter } = require("./routes/bag.route");
+const { BagsRouter } = require("./routes/bag.route");
+const { MobileRouter } = require("./routes/mobile.route");
+const { OtherRouter } = require("./routes/other.route");
 
 
 // --------------->>>>>>>> Middlewares <<<<<<<<-------------------
@@ -41,7 +43,9 @@ app.use("/logout", LogoutRouter);
 app.use("/vehicle", VehicleRouter);
 app.use("/person", HumanRouter);
 app.use("/pet", PetRouter);
-app.use("/bag/", BagRouter)
+app.use("/bag", BagsRouter);
+app.use("/mobile", MobileRouter);
+app.use("/other", OtherRouter)
 
 
 // --------------->>>>>>>> Server Running <<<<<<<<-------------------

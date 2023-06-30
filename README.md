@@ -420,3 +420,37 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 ## Delete Pet API
 
 `http://localhost:8080/pet/delete/649e91788099d610e668271b`
+
+## Bag Post API
+
+`http://localhost:8080/bag/add`
+
+## Bag get API
+
+`http://localhost:8080/bag/get`
+
+## Bag get response
+
+```{
+    "message": ":getting all your Bagss details 🚎  ",
+    "data": [
+        {
+            "_id": "649e9681ca1408d737783c54",
+            "bag_type": "hand-purse",
+            "bag_ownerName": "ayushi",
+            "bag_date": "2000-03-11T18:30:00.000Z",
+            "bag_time": "2008-01-01T18:30:00.000Z",
+            "PoliceStation": "jammu",
+            "__v": 0
+        }
+    ]
+}
+```
+
+## bag update API
+
+`http://localhost:8080/bag/update/649e9681ca1408d737783c54`
+
+## Bag Delete API
+
+`http://localhost:8080/bag/delete/649e9681ca1408d737783c54`
