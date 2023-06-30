@@ -2,10 +2,13 @@
 
 The Police Club mobile app is a comprehensive platform that delivers real-time information and news related to law enforcement agencies and police-related events. This app caters to a diverse audience, including journalists, law enforcement professionals, and the general public interested in staying informed about police-related matters.
 
+### Deployed Link
+
+`https://police-app.onrender.com/`
+
 ## System-Design -> HLD
 
 ![image](https://github.com/ayushi9797/police_mobile_app/assets/112810259/76fea6f6-6f08-42e1-8d40-a236ecbf8c9a)
-
 
 ## LLD -> Typescript
 
@@ -140,6 +143,15 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 | Get    | /logout        | This endpoint should allow user to logout their account | 200         |
 | Post   | /vehicle/add   | This route should allow user to add vehicle             | 201         |
 | Get    | /vehicle/get   | This route should allow user to get vehicle             | 200         |
+| Get by id | /vehicle/get/:id | This route should allow user to get unique vehicle  | 200         |
+| Patch    | /vehicle/update/:id  | This route should allow user to update vehicle     | 200         |
+| Delete    | /vehicle/delete/:id   | This route should allow user to delete vehicle             | 200         |
+|     |    |              |         |
+| post    | /person/add   | This route should allow user to add person             | 200         |
+| Get    | /person/get   | This route should allow user to get person             | 200         |
+| Get by id  | /person/get/:id   | This route should allow user to get unique person             | 200         |
+| Patch    | /person/update/:id   | This route should allow user to update vehicle             | 200         |
+| Delete    | /person/delete/"id   | This route should allow user to delete vehicle             | 200         |
 
 ## Vehicle Schema
 
