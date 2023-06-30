@@ -4,7 +4,7 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ## System-Design -> HLD
 
-![Alt text](image.png)
+
 
 ## LLD -> Typescript
 
