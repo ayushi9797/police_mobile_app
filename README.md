@@ -2,9 +2,6 @@
 
 The Police Club mobile app is a comprehensive platform that delivers real-time information and news related to law enforcement agencies and police-related events. This app caters to a diverse audience, including journalists, law enforcement professionals, and the general public interested in staying informed about police-related matters.
 
-### Deployed Link
-
-`https://police-app-2-0.onrender.com/`
 
 ## System-Design -> HLD
 
@@ -14,6 +11,13 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 - visit this folder -> cd police_lld
 - police.ts
+ ### Deployed Link
+
+`https://police-app-2-0.onrender.com/`
+
+![image](https://github.com/ayushi9797/police_mobile_app/assets/112810259/39c57d5c-b095-4059-ab2b-e207ca99f855)
+
+
 
 ## To run this application in typescript
 
