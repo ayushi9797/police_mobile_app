@@ -154,6 +154,10 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 | Delete    | /person/delete/"id  | This route should allow user to delete vehicle          | 200         |
 | post      | /pet/add            | This route should allow user to add pet                 | 200         |
 | get       | /pet/get            | This route should allow user to get pet                 | 200         |
+| getbyid   | /pet/get/:id        | This route should allow user to get pet                 | 200         |
+| patch     | /pet/update/:id     | This route should allow user to update pet              | 200         |
+| delete    | /pet/delete         | This route should allow user to delete pet              | 200        
+|
 
 ## Vehicle Schema
 
@@ -404,3 +408,11 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 }
 
 ```
+
+## PET UPDATE API
+
+`http://localhost:8080/pet/update/649e91788099d610e668271b`
+
+## Delete Pet API
+
+`http://localhost:8080/pet/delete/649e91788099d610e668271b`
