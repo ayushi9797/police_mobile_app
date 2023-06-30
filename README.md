@@ -64,6 +64,33 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 - `nodemon server`
 
+# All routes
+
+| METHOD    | ENDPOINT            | DESCRIPTION                                             | STATUS CODE |
+| --------- | ------------------- | ------------------------------------------------------- | ----------- |
+| Post      | /user/register      | User can able to register                               | 200         |
+|           |                     |
+| Post      | /user/login         | This route should allow user to login                   | 200         |
+| Get       | /logout             | This endpoint should allow user to logout their account | 200         |
+| Post      | /vehicle/add        | This route should allow user to add vehicle             | 201         |
+| Get       | /vehicle/get        | This route should allow user to get vehicle             | 200         |
+| Get by id | /vehicle/get/:id    | This route should allow user to get unique vehicle      | 200         |
+| Patch     | /vehicle/update/:id | This route should allow user to update vehicle          | 200         |
+| Delete    | /vehicle/delete/:id | This route should allow user to delete vehicle          | 200         |
+|           |                     |                                                         |             |
+| post      | /person/add         | This route should allow user to add person              | 200         |
+| Get       | /person/get         | This route should allow user to get person              | 200         |
+| Get by id | /person/get/:id     | This route should allow user to get unique person       | 200         |
+| Patch     | /person/update/:id  | This route should allow user to update vehicle          | 200         |
+| Delete    | /person/delete/"id  | This route should allow user to delete vehicle          | 200         |
+| post      | /pet/add            | This route should allow user to add pet                 | 200         |
+| get       | /pet/get            | This route should allow user to get pet                 | 200         |
+| getbyid   | /pet/get/:id        | This route should allow user to get pet                 | 200         |
+| patch     | /pet/update/:id     | This route should allow user to update pet              | 200         |
+| delete    | /pet/delete         | This route should allow user to delete pet              | 200         |
+
+|
+
 # User's Schema
 
 ```
@@ -132,32 +159,6 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 ## Logout Route Response
 
 `Log Out Successfully`
-
-# All routes
-
-| METHOD    | ENDPOINT            | DESCRIPTION                                             | STATUS CODE |
-| --------- | ------------------- | ------------------------------------------------------- | ----------- |
-| Post      | /user/register      | User can able to register                               | 200         |
-|           |                     |
-| Post      | /user/login         | This route should allow user to login                   | 200         |
-| Get       | /logout             | This endpoint should allow user to logout their account | 200         |
-| Post      | /vehicle/add        | This route should allow user to add vehicle             | 201         |
-| Get       | /vehicle/get        | This route should allow user to get vehicle             | 200         |
-| Get by id | /vehicle/get/:id    | This route should allow user to get unique vehicle      | 200         |
-| Patch     | /vehicle/update/:id | This route should allow user to update vehicle          | 200         |
-| Delete    | /vehicle/delete/:id | This route should allow user to delete vehicle          | 200         |
-|           |                     |                                                         |             |
-| post      | /person/add         | This route should allow user to add person              | 200         |
-| Get       | /person/get         | This route should allow user to get person              | 200         |
-| Get by id | /person/get/:id     | This route should allow user to get unique person       | 200         |
-| Patch     | /person/update/:id  | This route should allow user to update vehicle          | 200         |
-| Delete    | /person/delete/"id  | This route should allow user to delete vehicle          | 200         |
-| post      | /pet/add            | This route should allow user to add pet                 | 200         |
-| get       | /pet/get            | This route should allow user to get pet                 | 200         |
-| getbyid   | /pet/get/:id        | This route should allow user to get pet                 | 200         |
-| patch     | /pet/update/:id     | This route should allow user to update pet              | 200         |
-| delete    | /pet/delete         | This route should allow user to delete pet              | 200        
-|
 
 ## Vehicle Schema
 
