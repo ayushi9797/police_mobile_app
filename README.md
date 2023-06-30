@@ -4,6 +4,7 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ## System-Design -> HLD
 
+![image](https://github.com/ayushi9797/police_mobile_app/assets/112810259/76fea6f6-6f08-42e1-8d40-a236ecbf8c9a)
 
 
 ## LLD -> Typescript
