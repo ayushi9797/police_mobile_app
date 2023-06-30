@@ -1,7 +1,7 @@
 //! Pet Controller
 
 require("dotenv").config();
-const { PetModel } = require("../model/Pet.model");
+const { PetModel } = require("../model/pet.model");
 
 
 exports.addPet = async (req, res) => {
