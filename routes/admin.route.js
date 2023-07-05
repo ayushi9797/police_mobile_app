@@ -13,31 +13,28 @@ AdminRouter.use(express.json());
 // !  Admin register route
 AdminRouter.post('/register', async (req, res) => {
     try {
-        const { adminname, password, email } = req.body;
-        console.log(req.body);
+        const { name, email, password } = req.body;
+        const isPresent = await Admin.find({ email });
 
-        // Check if admin already exists
-        const existingAdmin = await Admin.findOne({ $or: [{ adminname }, { email }] });
-        // console.log(existingAdmin)
-        if (existingAdmin) {
-            return res.status(409).json({ error: 'Admin already exists' });
+        if (isPresent.length === 0) {
+            // encrypte password and register
+            bcrypt.hash(password, 5, async (err, hash) => {
+                if (err) res.status(401).json({ "error ": err.message });
+                else {
+                    const newAdmin = new Admin({
+                        name,
+                        email,
+                        password: hash,
+                    });
+                    await newAdmin.save();
+                    res.status(200).json({ success: "Admin registered successfully", newAdmin });
+                }
+            });
+        } else {
+            res.status(404).json({ msg: "Admin already registered" });
         }
-
-        // Hash the password
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        // Create a new admin
-        const admin = new Admin({
-            adminname,
-            password: hashedPassword,
-            email
-        });
-
-        await admin.save();
-
-        res.status(201).json({ message: 'Admin registered successfully', admin });
     } catch (error) {
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ msg: error.message });
     }
 });
 
