@@ -7,6 +7,8 @@ require("dotenv").config();
 
 
 const { dbconnection } = require("./config/db");
+const { AdminRouter } = require("./routes/admin.route");
+
 const { UserRouter } = require("./routes/user.route");
 const { authenticate } = require("./middlewares/authenticate.middleware");
 const { LogsData } = require("./middlewares/log.middleware");
@@ -18,7 +20,6 @@ const { PetRouter } = require("./routes/pet.route");
 const { BagsRouter } = require("./routes/bag.route");
 const { MobileRouter } = require("./routes/mobile.route");
 const { OtherRouter } = require("./routes/other.route");
-const { AdminRouter } = require("./routes/admin.route");
 
 
 // --------------->>>>>>>> Middlewares <<<<<<<<-------------------
@@ -33,10 +34,14 @@ app.use(express.json());
 app.get("/", (req, res) => res.send(`<h1 style="text-align:Center;color:purple">Welcome Home  API</h1>`));
 
 
+// ! admin routes
+app.use("/admin", AdminRouter)
+
 
 // --------------->>>>>>>> Routers <<<<<<<<-------------------
 app.use(LogsData);
 app.use("/user", UserRouter);
+
 
 app.use(authenticate);
 app.use("/newtoken", GntRouter);
@@ -48,8 +53,6 @@ app.use("/bag", BagsRouter);
 app.use("/mobile", MobileRouter);
 app.use("/other", OtherRouter)
 
-// ! admin routes
-app.use("/admin",AdminRouter)
 
 
 // --------------->>>>>>>> Server Running <<<<<<<<--------------------

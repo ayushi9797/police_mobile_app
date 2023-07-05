@@ -1,6 +1,8 @@
 const express = require("express");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+
+require("dotenv").config();
 const Admin = require("../model/admin.model");
 const app = express();
 
@@ -12,9 +14,11 @@ AdminRouter.use(express.json());
 AdminRouter.post('/register', async (req, res) => {
     try {
         const { adminname, password, email } = req.body;
+        console.log(req.body);
 
         // Check if admin already exists
         const existingAdmin = await Admin.findOne({ $or: [{ adminname }, { email }] });
+        // console.log(existingAdmin)
         if (existingAdmin) {
             return res.status(409).json({ error: 'Admin already exists' });
         }
@@ -54,7 +58,7 @@ AdminRouter.post('/login', async (req, res) => {
 
         // used the hashed password
         const hashed_password = admin?.password;
-        console.log(hashed_password);
+        // console.log(hashed_password);
 
         //  if the admin is matched with registered details then comparing the details
         if (admin) {
@@ -67,7 +71,7 @@ AdminRouter.post('/login', async (req, res) => {
                     const token = jwt.sign({ admin_id: admin._id }, 'admin', {
                         expiresIn: "7d",
                     });
-                    console.log(token);
+                    // console.log(token);
 
 
                     //  if respond is correct then send the login successful message
@@ -92,7 +96,10 @@ AdminRouter.post('/login', async (req, res) => {
 
 })
 
-
+// 
+// AdminRouter.get('/get', function (req, res) {
+//     let admin = 
+// })
 
 
 
