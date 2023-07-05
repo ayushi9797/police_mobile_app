@@ -18,6 +18,7 @@ const { PetRouter } = require("./routes/pet.route");
 const { BagsRouter } = require("./routes/bag.route");
 const { MobileRouter } = require("./routes/mobile.route");
 const { OtherRouter } = require("./routes/other.route");
+const { AdminRouter } = require("./routes/admin.route");
 
 
 // --------------->>>>>>>> Middlewares <<<<<<<<-------------------
@@ -46,6 +47,9 @@ app.use("/pet", PetRouter);
 app.use("/bag", BagsRouter);
 app.use("/mobile", MobileRouter);
 app.use("/other", OtherRouter)
+
+// ! admin routes
+app.use("/admin",AdminRouter)
 
 
 // --------------->>>>>>>> Server Running <<<<<<<<--------------------
