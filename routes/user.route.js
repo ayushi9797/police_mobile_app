@@ -1,6 +1,6 @@
 const express = require ("express");
 
-// --------------->>>>>>>> Male Service Router <<<<<<<<-------------------
+// --------------->>>>>>>>  Service Router <<<<<<<<-------------------
 const {signup ,login } = require("../controllers/user.controller");
 
 const UserRouter = express.Router();
