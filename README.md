@@ -123,10 +123,11 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ```
 {
-    "name": "chikuuu",
-    "email": "chiku111@gmail.com",
-    "phoneNumber": "9450118914",
-    "password": "1234"
+  "name": "chikuuu",
+  "email": "chiku555@gmail.com",
+  "phoneNumber": "9450118914",
+  "picture": "img.png",
+  "password": "1234"
 }
 ```
 
@@ -134,14 +135,16 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ```
 {
-    "success": "user registered successfully",
-    "newUser": {
-        "name": "ayushi soni",
-        "email": "soniayushi517@gmail.com",
-        "password": "$2b$05$frlTTWFk9V.M6Llek9CsEOWr0NjhANtRNlBYk/l9loxF.7WWFABu.",
-        "_id": "64995c98336ee3e5a6e19475",
-        "__v": 0
-    }
+  "success": "user registered successfully",
+  "newUser": {
+    "name": "chikuuu",
+    "email": "chiku555@gmail.com",
+    "password": "$2b$05$v164WQ7tThtPKet/trkPeebdmWgUUcxEnzDntdbglaCe8g9ILSlJe",
+    "phoneNumber": "9450118914",
+    "picture": "img.png",
+    "_id": "64a4fcb0f0a89dea994e3cd3",
+    "__v": 0
+  }
 }
 ```
 
@@ -153,13 +156,13 @@ The Police Club mobile app is a comprehensive platform that delivers real-time i
 
 ```
 {
-    "message": "Login successfully",
-    "Normal_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDk5NWM5ODMzNmVlM2U1YTZlMTk0NzUiLCJpYXQiOjE2ODc3NzU3MTUsImV4cCI6MTY4ODM4MDUxNX0.gffkN2mSqTeSsbww_RTRKDIE86Lr40QwWVddGPRIFF4",
-    "Refresh_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDk5NWM5ODMzNmVlM2U1YTZlMTk0NzUiLCJpYXQiOjE2ODc3NzU3MTUsImV4cCI6MTY4ODM4MDUxNX0.gffkN2mSqTeSsbww_RTRKDIE86Lr40QwWVddGPRIFF4",
-    "name": "ayushi soni",
-    "email": "soniayushi517@gmail.com",
-    "userid": "64995c98336ee3e5a6e19475",
-    "otp": 9230
+  "message": "Login successfully",
+  "Normal_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGE0ZmNiMGYwYTg5ZGVhOTk0ZTNjZDMiLCJpYXQiOjE2ODg1MzQyMzksImV4cCI6MTY4OTEzOTAzOX0.0LErrPqiN_yKNOmrQKVbGLkj1tL16L7kQSLefKM2viQ",
+  "Refresh_Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGE0ZmNiMGYwYTg5ZGVhOTk0ZTNjZDMiLCJpYXQiOjE2ODg1MzQyMzksImV4cCI6MTY4OTEzOTAzOX0.0LErrPqiN_yKNOmrQKVbGLkj1tL16L7kQSLefKM2viQ",
+  "name": "chikuuu",
+  "email": "chiku555@gmail.com",
+  "userid": "64a4fcb0f0a89dea994e3cd3",
+  "otp": 1124
 }
 ```
 
